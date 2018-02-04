@@ -7,6 +7,9 @@ from PySide import QtGui, QtCore
 
 
 class Communicate(QtCore.QObject):
+    """
+    :type msg_to_sb: QtCore.Signal
+    """
     msg_to_sb = QtCore.Signal(str)
 
 

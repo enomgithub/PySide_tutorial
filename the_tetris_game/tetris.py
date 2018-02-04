@@ -267,7 +267,6 @@ class Board(QtGui.QFrame):
         num_full_lines += len(rows_to_remove)
         if num_full_lines > 0:
             self.num_lines_removed += num_full_lines
-            print self.num_lines_removed
             self.com.msg_to_sb.emit(str(self.num_lines_removed))
             self.is_waiting_after_line = True
             self.cur_piece.set_shape(Tetrominoes.no_shape)
